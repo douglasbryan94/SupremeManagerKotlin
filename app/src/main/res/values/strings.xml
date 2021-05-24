@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SupremeManager</string>
+    <string name="imageContentDescription">CompanyLogo</string>
+    <string name="btnDistribution_Text">Dist</string>
+    <string name="btnPurchase_Text">Purchase</string>
+    <string name="btnCurrent_Text">Current</string>
+    <string name="ActivityMain_Title_Text">Shopping List</string>
+    <string name="Product_Cream_Name">Cream</string>
+    <string name="Product_Milk_Name">Milk</string>
+    <string name="Product_Soap_Name">Soap</string>
+    <string name="Product_Paper_Cup_Name">Cups</string>
+    <string name="Product_Stir_Stick_Name">Stir Sticks</string>
+    <string name="Product_Coffee_Name">Coffee</string>
+    <string name="Product_Hot_Chocolate_Name">Hot Chocolate</string>
+    <string name="Product_Equal_Name">Equal</string>
+    <string name="Product_Sugar_Name">Sugar</string>
+    <string name="Product_Green_Tea_Name">Green Tea</string>
+    <string name="Product_Orange_Pekoe_Name">Orange Pekoe</string>
+    <string name="Product_ConeCupsCase_Name">Cone Cup Case</string>
+    <string name="Product_Filters_Name">Coffee Filters</string>
+    <string name="FragmentDistribution_CountSubmissionDate_Text">Count Submitted on</string>
+    <string name="DialogPurchase_ProductName_Label">Which Product :</string>
+    <string name="DialogPurchase_ProductQuantity_Label">How many :</string>
+    <string name="DialogPurchase_btnAcceptPurchase_Text">Accept</string>
+    <string name="FragmentSale_btnCommit_Text">Commit</string>
+    <string name="FragmentDistribution_lblSubmissionDate_Text">"Count Submitted on %1$s"</string>
+
+    <string-array name="products_array">
+        <item>@string/Product_Cream_Name</item>
+        <item>@string/Product_Milk_Name</item>
+        <item>@string/Product_Soap_Name</item>
+        <item>@string/Product_Paper_Cup_Name</item>
+        <item>@string/Product_Stir_Stick_Name</item>
+        <item>@string/Product_Coffee_Name</item>
+        <item>@string/Product_Hot_Chocolate_Name</item>
+        <item>@string/Product_Equal_Name</item>
+        <item>@string/Product_Sugar_Name</item>
+        <item>@string/Product_Green_Tea_Name</item>
+        <item>@string/Product_Orange_Pekoe_Name</item>
+        <item>@string/Product_ConeCupsCase_Name</item>
+    </string-array>
+</resources>

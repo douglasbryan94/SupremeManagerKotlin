@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image001"
+        android:contentDescription="@string/imageContentDescription" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/columnOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/lblCream"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Product_Cream_Name"
+            android:labelFor="@id/txtCreamValue"
+            app:layout_constraintEnd_toStartOf="@+id/txtCreamValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCreamValue"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lblCream"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAutofill="no" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchSoap"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Soap_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCreamValue" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchStirSticks"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Stir_Stick_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchSoap" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchHotChocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Hot_Chocolate_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchStirSticks" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Sugar_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchHotChocolate" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchOrangePekoe"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Orange_Pekoe_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchSugar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/columnTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/lblMilk"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Product_Milk_Name"
+            android:labelFor="@id/txtMilkValue"
+            app:layout_constraintEnd_toStartOf="@+id/txtMilkValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtMilkValue"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lblMilk"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/lblCups"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Product_Paper_Cup_Name"
+            android:labelFor="@id/txtCupsValue"
+            app:layout_constraintEnd_toStartOf="@+id/txtCupsValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblMilk" />
+
+        <EditText
+            android:id="@+id/txtCupsValue"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lblCups"
+            app:layout_constraintTop_toBottomOf="@+id/txtMilkValue"
+            android:importantForAutofill="no" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Coffee_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCupsValue" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Equal_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchCoffee" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchGreenTea"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Green_Tea_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchEqual" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtchFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/Product_Filters_Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swtchGreenTea" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCommit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/FragmentSale_btnCommit_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/columnOne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

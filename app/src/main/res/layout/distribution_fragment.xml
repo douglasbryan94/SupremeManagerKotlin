@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image001"
+        android:contentDescription="@string/imageContentDescription" />
+
+    <TextView
+        android:id="@+id/lblSubmissionDate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/FragmentDistribution_CountSubmissionDate_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/lblCream"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/Product_Cream_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtCreamValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSubmissionDate" />
+
+    <TextView
+        android:id="@+id/txtCreamValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblCream"
+        app:layout_constraintTop_toBottomOf="@+id/lblSubmissionDate" />
+
+    <TextView
+        android:id="@+id/lblMilk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Milk_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtMilkValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCream" />
+
+    <TextView
+        android:id="@+id/txtMilkValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblMilk"
+        app:layout_constraintTop_toBottomOf="@+id/txtCreamValue" />
+
+    <TextView
+        android:id="@+id/lblSoap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Soap_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtSoapValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMilk" />
+
+    <TextView
+        android:id="@+id/txtSoapValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblSoap"
+        app:layout_constraintTop_toBottomOf="@+id/txtMilkValue" />
+
+    <TextView
+        android:id="@+id/lblPaperCup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Paper_Cup_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtPaperCupValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSoap" />
+
+    <TextView
+        android:id="@+id/txtPaperCupValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblPaperCup"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoapValue" />
+
+    <TextView
+        android:id="@+id/lblStirStick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Stir_Stick_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtStirStickValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPaperCup" />
+
+    <TextView
+        android:id="@+id/txtStirStickValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblStirStick"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaperCupValue" />
+
+    <TextView
+        android:id="@+id/lblCoffee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Coffee_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtCoffeeValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblStirStick" />
+
+    <TextView
+        android:id="@+id/txtCoffeeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblCoffee"
+        app:layout_constraintTop_toBottomOf="@+id/txtStirStickValue" />
+
+    <TextView
+        android:id="@+id/lblHotChocolate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Hot_Chocolate_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtHotChocolateValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCoffee" />
+
+    <TextView
+        android:id="@+id/txtHotChocolateValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblHotChocolate"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoffeeValue" />
+
+    <TextView
+        android:id="@+id/lblEqual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Equal_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtEqualValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHotChocolate" />
+
+    <TextView
+        android:id="@+id/txtEqualValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblEqual"
+        app:layout_constraintTop_toBottomOf="@+id/txtHotChocolateValue" />
+
+    <TextView
+        android:id="@+id/lblSugar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Sugar_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtSugarValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEqual" />
+
+    <TextView
+        android:id="@+id/txtSugarValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblSugar"
+        app:layout_constraintTop_toBottomOf="@+id/txtEqualValue" />
+
+    <TextView
+        android:id="@+id/lblGreenTea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Green_Tea_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtGreenTeaValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSugar" />
+
+    <TextView
+        android:id="@+id/txtGreenTeaValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblGreenTea"
+        app:layout_constraintTop_toBottomOf="@+id/txtSugarValue" />
+
+    <TextView
+        android:id="@+id/lblOrangePekoe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/Product_Orange_Pekoe_Name"
+        app:layout_constraintEnd_toStartOf="@+id/txtOrangePekoeValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGreenTea" />
+
+    <TextView
+        android:id="@+id/txtOrangePekoeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblOrangePekoe"
+        app:layout_constraintTop_toBottomOf="@+id/txtGreenTeaValue" />
+
+    <CheckBox
+        android:id="@+id/chkFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/Product_Filters_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrangePekoeValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
